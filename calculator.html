@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calculator</title>
+  <style>
+    body{
+    margin: 0;
+    box-sizing:border-box;
+    background-color: black;
+    position: fixed;
+
+    }
+    #output{
+      width: 100%;
+      outline: none;
+      background-color: black ;
+      color: white;
+      font-size: 49px;
+      padding-top: 200px;
+      text-align: right;
+      border:none;
+      
+      
+      
+      
+      
+    }
+    
+    #ans{
+      width: 100%;
+      outline: none;
+      background-color: black;
+      color: gray;
+      font-size: 49px;
+      text-align: right;
+      border:none;
+      height: 55px;
+      margin-bottom: 10px;
+      
+      
+      
+      
+    }
+    
+    .topBtn{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 5px;
+      margin-left: 15px;
+    }
+        .buttomBtn{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      row-gap: 5px;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+    #top{
+      height: 70px;
+      border-radius: 100%;
+      width: 70px;
+      border:none;
+      font-size: 30px;
+      background-color: blue;
+      color: white;
+      
+      
+      
+    }
+    
+    
+      #right{
+      height: 70px;
+      border-radius: 100%;
+      width: 70px;
+      border:none;
+      font-size: 30px;
+      background-color: orange;
+      color: white;
+      
+      
+    }
+    
+    #bottom{
+      height: 70px;
+      border-radius: 100%;
+      width: 70px;
+      border:none;
+      font-size: 30px;
+      background-color: gray;
+      color: white;
+      
+      
+    }
+    #zero{
+            height: 70px;
+      border-radius: 100px;
+      width: 160px;
+      border:none;
+      font-size: 30px;
+      background-color: gray;
+      color: white;
+    }
+    #top:active{
+      opacity: 0.7;
+    }
+    
+     #right:active{
+      opacity: 0.7;
+    }
+     #bottom:active{
+      opacity: 0.7;
+    }
+     #zero:active{
+      opacity: 0.7;
+    }
+    
+    
+    
+    
+    
+  </style>
+  
+  
+  
+  
+</head>
+
+<body>
+  
+  
+  
+  <input id="output" type="text">
+  
+    
+    <input id="ans" type="text">
+  
+<div class="topBtn">
+  
+  
+
+
+<button class="ac" id="top" >AC</button>
+<button class="del" id="top">DEL</button>
+<button class="per" id="top" data-num="%">%</button>
+<button class="divide" id="right" data-num="/">&#247;</button>
+<button class="sev" id="bottom" data-num="7">7</button>
+<button class="eight" id="bottom" data-num="8">8</button>
+<button class="nine" id="bottom" data-num="9">9</button>
+<button class="mul" id="right" data-num="*">&#215;</button>
+<button class="four" id="bottom" data-num="4">4</button>
+<button class="five" id="bottom" data-num="5">5</button>
+<button class="six" id="bottom" data-num="6">6</button>
+<button class="sub" id="right" data-num="-">-</button>
+<button  class="one" id="bottom" data-num="1">1</button>
+<button class="two" id="bottom" data-num="2">2</button>
+<button class="three" id="bottom" data-num="3">3</button>
+<button class="add" id="right" data-num="+">+</button>
+
+</div>
+
+<div class="buttomBtn">
+  <button class="zer" id="zero" data-num="0">0</button>
+  <button class="dot" id="bottom" data-num=".">&#183;</button>
+  <button class="solve" id="right">&#61;</button>
+  
+  
+</div>
+
+
+
+
+
+<script src="calculator.js"></script>
+
+</body>
+
+</html>
